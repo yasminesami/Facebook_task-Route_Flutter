@@ -67,7 +67,9 @@ class Post extends StatelessWidget {
         // صورة البوست
         Container(
           height: 180,
-          child: Image.asset(postImage),
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage(postImage), fit: BoxFit.fill)),
         ),
         // خيارات التفاعل
         Padding(
